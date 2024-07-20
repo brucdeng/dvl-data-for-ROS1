@@ -5,8 +5,10 @@ make the package and source
 ```
 roscore
 ```
+
 ```
 rosrun test_ros publisher_node.py
+```
 ```
 rosrun test_ros subscriber_node.py
 ```
