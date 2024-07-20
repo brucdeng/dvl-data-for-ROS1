@@ -1,0 +1,343 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="google-site-verification" content="CjkdY6BqKWAVmQ78_iSq6J7ZZ9AoL7-CjFVBYGg9FU4" />
+<link rel="shortcut icon" href="/custom/favicon.ico" type="image/ico" />
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/custom/js/sorttable.js"></script>
+<script type="text/javascript" src="/custom/libraries/jquery.min.js"></script>                         
+<script type="text/javascript" src="/custom/js/seesaw.js"></script> 
+<script type="text/javascript" src="/custom/js/rosversion.js"></script> 
+<!--script type="text/javascript" src="/custom/libraries/RGraph.common.core.js" ></script Used for metrics only, should be conditional, not at the top-->
+<!--script type="text/javascript" src="/custom/libraries/RGraph.bar.js" ></script same as above -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17821189-2']);
+  _gaq.push(['_setDomainName', 'wiki.ros.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow">
+
+<title>noetic/Installation/Ubuntu - ROS Wiki</title>
+<script type="text/javascript" src="/moin_static197/common/js/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static197/rostheme/css/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="/moin_static197/rostheme/css/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="/moin_static197/rostheme/css/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="/moin_static197/rostheme/css/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static197/rostheme/css/msie.css">
+<![endif]-->
+
+
+
+
+<link rel="canonical" href="http://wiki.ros.org/noetic/Installation/Ubuntu" />
+
+<link rel="Start" href="/Documentation">
+<link rel="Alternate" title="Wiki Markup" href="/action/raw/noetic/Installation/Ubuntu?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="/action/print/noetic/Installation/Ubuntu?action=print">
+<link rel="Up" href="/noetic/Installation">
+<link rel="Search" href="/FindPage">
+<link rel="Index" href="/TitleIndex">
+<link rel="Glossary" href="/WordIndex">
+<link rel="Help" href="/HelpOnFormatting">
+</head>
+
+<body  lang="en" dir="ltr">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVD5Z6G6NH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EVD5Z6G6NH');
+</script>
+
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+if(f) f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+if(e) {
+  searchChange(e);
+  searchBlur(e);
+}
+
+function handleSubmit() {
+  var f = document.getElementById('searchform');
+  var t = document.getElementById('searchinput');
+  var r = document.getElementById('real_searchinput');
+
+  //alert("handleSubmit "+ t.value);
+  if(t.value.match(/review/)) {
+    r.value = t.value;
+  } else {
+    //r.value = t.value + " -PackageReviewCategory -StackReviewCategory -M3Review -DocReview -ApiReview -HelpOn -BadContent -LocalSpellingWords";
+    r.value = t.value + " -PackageReviewCategory -StackReviewCategory -DocReview -ApiReview";
+  }
+  //return validate(f);
+}
+//-->
+</script>
+
+<div id="dpage">
+  <div id="dpage-inner">
+    <div id="header"><div id="topnav">
+
+<!-- Alert box -->
+<!-- To enable/disable the alert box, uncomment/comment the block below and update the content below the button. -->
+<!--
+    <div class="alert alert-info alert-dismissable" style="text-align: center;">
+<script>
+jQuery(function( $ ){
+    alert_box_name = 'roswiki_roscon'
+    state = localStorage.getItem(alert_box_name);
+    if (!state) {
+      localStorage.setItem(alert_box_name, 'open');
+    }
+    state = localStorage.getItem(alert_box_name);
+    if (state == 'closed') {
+        $( '#topnav .alert' ).hide();
+    }
+    $( '.close' ).click(function () {
+	console.log('in .close.click');
+        localStorage.setItem(alert_box_name, 'closed');
+        $( '#topnav .alert' ).hide();
+  });
+});
+</script>
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <a href="http://roscon.ros.org">ROSCon 2017</a> will be in Vancouver, September 21-22! <br>
+      The last few years have sold out: register now and take advantage of discounted hotel rates</a>.
+    </div>
+-->
+<!-- End Alert box -->
+
+      <table id="topnav-table">
+        <tr>
+          <td width="300" valign="top"><a href="/"><img border="0" src="/custom/images/ros_org.png" alt="ros.org" width="238" height="51"/></a></td>
+          <td width="500" valign="middle">
+            <a href="http://www.ros.org/about-ros">About</a>
+            |
+            <a href="/Support">Support</a>
+            |
+            <a href="http://discourse.ros.org/">Discussion Forum</a>
+            |
+            <a href="http://index.ros.org/">Index</a>
+            |
+            <a href="http://status.ros.org/">Service Status</a>
+            |
+            <a href="https://robotics.stackexchange.com/questions/tagged/ros">ros @ Robotics Stack Exchange</a>
+          </td>
+
+      </tr>
+      <tr>
+        <td colspan="3" height="53" width="1024"><nobr><img src="/custom/images/menu_left.png" width="17" height="53" alt=""/><a href="/"><img
+        border="0" src="/custom/images/menu_documentation.png" width="237" height="53" alt="Documentation" /></a><img
+        src="/custom/images/menu_spacer.png" width="69" height="53" /><a href="https://index.ros.org/packages"><img border="0"
+        src="/custom/images/menu_browse_software.png" width="268" height="53" alt="Browse Software" /></a><img
+        src="/custom/images/menu_spacer.png" width="69" height="53" /><a href="https://discourse.ros.org/c/general"><img border="0"
+        src="/custom/images/menu_news.png" width="84" height="53" alt="News" /></a><img
+        src="/custom/images/menu_spacer.png" width="69" height="53" /><a href="/ROS/Installation"><img border="0"
+        src="/custom/images/menu_download.png" width="151" height="53" alt="Download" /></a><img
+        src="/custom/images/menu_right.png" width="60" height="53" /></nobr></td>
+
+      </tr>
+    </table> <!-- topnav-table -->
+
+    </div> <!-- /#topav -->
+  </div> <!-- /#header -->
+
+
+<div id="header2">
+
+<ul id="pagelocation">
+<li><a href="/noetic">noetic</a></li><li><a href="/noetic/Installation">Installation</a></li><li><a href="/noetic/Installation/Ubuntu">Ubuntu</a></li>
+</ul>
+
+<div id="locationline">
+</div>
+</div>
+
+<div id="sidebar">
+<h4>ROS 2 Documentation</h4><p>The ROS Wiki is for ROS 1. Are you using ROS 2 (<a href="http://docs.ros.org/en/humble/">Humble</a>, <a href="http://docs.ros.org/en/iron/">Iron</a>, or <a href="http://docs.ros.org/en/rolling/">Rolling</a>)? <br><a href="http://docs.ros.org">Check out the ROS 2 Project Documentation</a><br>Package specific documentation can be found on <a href="https://index.ros.org">index.ros.org</a></p>
+<div class="sidepanel">
+<h1>Wiki</h1>
+
+<ul id="navibar">
+<li class="wikilink"><a href="/Distributions">Distributions</a></li><li class="wikilink"><a href="/ROS/Installation">ROS/Installation</a></li><li class="wikilink"><a href="/ROS/Tutorials">ROS/Tutorials</a></li><li class="wikilink"><a href="/RecentChanges">RecentChanges</a></li><li class="current"><a href="/noetic/Installation/Ubuntu">Ubuntu</a></li>
+</ul>
+
+</div>
+<div class="sidepanel">
+<h1>Page</h1>
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="/action/info/noetic/Installation/Ubuntu?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="/action/AttachFile/noetic/Installation/Ubuntu?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/noetic/Installation/Ubuntu">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="show" disabled class="disabled">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="CopyPage">Copy Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="MyPages">My Pages</option>
+<option value="show" disabled class="disabled">Subscribe User</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="CreatePdfDocument">CreatePdfDocument</option>
+<option value="Load">Load</option>
+<option value="RawFile">RawFile</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+<div class="sidepanel">
+<h1>User</h1>
+<ul id="username"><li><a href="/action/login/noetic/Installation/Ubuntu?action=login" id="login" rel="nofollow">Login</a></li></ul>
+</div>
+</div>
+
+<div id="page" lang="en" dir="ltr">
+
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line867">
+<h1 id="Ubuntu_install_of_ROS_Noetic">Ubuntu install of ROS Noetic</h1>
+<span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><p class="line867"><a class="http" href="http://build.ros.org">The ROS build farm</a> builds Debian packages for several Ubuntu platforms, listed below. These packages are ready to use so you <a href="/noetic/Installation/Source">don't have to build from source</a>. You can check the status of individual packages <a class="http" href="http://repositories.ros.org/status_page/ros_noetic_default.html">here</a>. <span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span><span class="anchor" id="line-6"></span><p class="line867"><span class="anchor" id="line-7"></span><span class="anchor" id="line-8"></span><div class="solid blue"><span class="anchor" id="line-1-1"></span><p class="line862">Note that there are also packages available from Ubuntu upstream. Please see <a href="/UpstreamPackages">UpstreamPackages</a> to understand the difference. </div><span class="anchor" id="line-9"></span><span class="anchor" id="line-10"></span><p class="line867"><div dir="ltr" id="SupportBuildfarm.content" lang="en"><span class="anchor" id="SupportBuildfarm.top"></span>
+<span class="anchor" id="SupportBuildfarm.line-1"></span><p class="line867"><span class="anchor" id="SupportBuildfarm.line-2"></span><span class="anchor" id="SupportBuildfarm.line-3"></span><span class="anchor" id="SupportBuildfarm.line-4"></span><span class="anchor" id="SupportBuildfarm.line-5"></span><div class="important"><span class="anchor" id="SupportBuildfarm.line-1-1"></span><p class="line867"><strong>If you rely on these packages, please support OSRF.</strong> <span class="anchor" id="SupportBuildfarm.line-2-1"></span><span class="anchor" id="SupportBuildfarm.line-3-1"></span><p class="line862">These packages are built and hosted on infrastructure maintained and paid for by the <a class="http" href="http://www.osrfoundation.org">Open Source Robotics Foundation</a>, a 501(c)(3) non-profit organization. If OSRF were to receive one penny for each downloaded package for just two months, we could cover our annual costs to manage, update, and host all of our online services.  Please consider <a class="https" href="https://www.openrobotics.org/support-the-ros-buildfarm">donating to OSRF today</a>.  </div><span class="anchor" id="SupportBuildfarm.line-6"></span><span class="anchor" id="SupportBuildfarm.bottom"></span></div> <span class="anchor" id="line-11"></span><span class="anchor" id="line-12"></span><p class="line867"><div class="table-of-contents"><p class="table-of-contents-heading">Contents<ol><li>
+<a href="#Ubuntu_install_of_ROS_Noetic">Ubuntu install of ROS Noetic</a><ol><li>
+<a href="#Installation">Installation</a><ol><li>
+<a href="#Installation.2FUbuntu.2FSources.Configure_your_Ubuntu_repositories">Configure your Ubuntu repositories</a></li><li>
+<a href="#Installation.2FUbuntu.2FSources.Setup_your_sources.list">Setup your sources.list</a></li><li>
+<a href="#Installation.2FUbuntu.2FSources.Set_up_your_keys">Set up your keys</a></li><li>
+<a href="#Installation-1">Installation</a></li><li>
+<a href="#noetic.2FInstallation.2FDebEnvironment.Environment_setup">Environment setup</a></li><li>
+<a href="#Dependencies_for_building_packages">Dependencies for building packages</a></li></ol></li><li>
+<a href="#noetic.2FInstallation.2FPostInstall.Tutorials">Tutorials</a></li><li>
+<a href="#ROS_One-line_Installation">ROS One-line Installation</a></li></ol></li></ol></div><p class="line874"> <span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span><span class="anchor" id="line-15"></span><p class="line867">
+<h2 id="Installation">Installation</h2>
+<span class="anchor" id="line-16"></span><span class="anchor" id="line-17"></span><p class="line867"><div dir="ltr" id="Installation.2FUbuntu.2FSources.content" lang="en"><span class="anchor" id="Installation.2FUbuntu.2FSources.top"></span>
+<span class="anchor" id="Installation.2FUbuntu.2FSources.line-1"></span><p class="line867">
+<h3 id="Installation.2FUbuntu.2FSources.Configure_your_Ubuntu_repositories">Configure your Ubuntu repositories</h3>
+<span class="anchor" id="Installation.2FUbuntu.2FSources.line-2"></span><span class="anchor" id="Installation.2FUbuntu.2FSources.line-3"></span><p class="line862">Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse." You can <a class="https" href="https://help.ubuntu.com/community/Repositories/Ubuntu">follow the Ubuntu guide</a> for instructions on doing this. <span class="anchor" id="Installation.2FUbuntu.2FSources.line-4"></span><span class="anchor" id="Installation.2FUbuntu.2FSources.line-5"></span><p class="line867">
+<h3 id="Installation.2FUbuntu.2FSources.Setup_your_sources.list">Setup your sources.list</h3>
+<span class="anchor" id="Installation.2FUbuntu.2FSources.line-6"></span><span class="anchor" id="Installation.2FUbuntu.2FSources.line-7"></span><p class="line874">Setup your computer to accept software from packages.ros.org. <span class="anchor" id="Installation.2FUbuntu.2FSources.line-8"></span><span class="anchor" id="Installation.2FUbuntu.2FSources.line-9"></span><ul><li style="list-style-type:none"><p class="line891"><small><span class="anchor" id="Installation.2FUbuntu.2FSources.line-10"></span><span class="anchor" id="Installation.2FUbuntu.2FSources.line-11"></span><pre><span class="anchor" id="Installation.2FUbuntu.2FSources.line-1-1"></span>sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" &gt; /etc/apt/sources.list.d/ros-latest.list'</pre><p class="line891"></small><span class="anchor" id="Installation.2FUbuntu.2FSources.line-12"></span><span class="anchor" id="Installation.2FUbuntu.2FSources.line-13"></span><span class="anchor" id="Installation.2FUbuntu.2FSources.line-14"></span></li></ul><div><table><tbody><tr>  <td style="background-color: #FFFF00"><p class="line862"> <a href="/ROS/Installation/UbuntuMirrors">Mirrors</a></td>
+  <td><p class="line891"><a href="/DebianPackageSources">Source Debs</a> are also available</td>
+</tr>
+</tbody></table></div><span class="anchor" id="Installation.2FUbuntu.2FSources.line-15"></span><span class="anchor" id="Installation.2FUbuntu.2FSources.line-16"></span><p class="line867">
+<h3 id="Installation.2FUbuntu.2FSources.Set_up_your_keys">Set up your keys</h3>
+<span class="anchor" id="Installation.2FUbuntu.2FSources.line-17"></span><span class="anchor" id="Installation.2FUbuntu.2FSources.line-18"></span><ul><li style="list-style-type:none"><span class="anchor" id="Installation.2FUbuntu.2FSources.line-19"></span><span class="anchor" id="Installation.2FUbuntu.2FSources.line-20"></span><span class="anchor" id="Installation.2FUbuntu.2FSources.line-21"></span><pre><span class="anchor" id="Installation.2FUbuntu.2FSources.line-1-2"></span>sudo apt install curl # if you haven't already installed curl
+<span class="anchor" id="Installation.2FUbuntu.2FSources.line-2-1"></span>curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -</pre><span class="anchor" id="Installation.2FUbuntu.2FSources.line-22"></span></li></ul><span class="anchor" id="Installation.2FUbuntu.2FSources.bottom"></span></div> <span class="anchor" id="line-18"></span><span class="anchor" id="line-19"></span><span class="anchor" id="line-20"></span><p class="line867">
+<h3 id="Installation-1">Installation</h3>
+<span class="anchor" id="line-21"></span><span class="anchor" id="line-22"></span><p class="line867"><div dir="ltr" id="noetic.2FInstallation.2FDebianMetapackages.content" lang="en"><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.top"></span>
+<span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-1"></span><p class="line874">First, make sure your Debian package index is up-to-date: <span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-2"></span><ul><li style="list-style-type:none"><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-3"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-4"></span><pre><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-1-1"></span>sudo apt update</pre><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-5"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-6"></span></li></ul><p class="line874">Now pick how much of ROS you would like to install. <span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-7"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-8"></span><ul><li style="list-style-type:none"><p class="line891"><strong>Desktop-Full Install: (Recommended)</strong> : Everything in <strong>Desktop</strong> plus 2D/3D simulators and 2D/3D perception packages <span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-9"></span><ul><li style="list-style-type:none"><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-10"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-11"></span><pre><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-1-2"></span>sudo apt install ros-noetic-desktop-full</pre><p class="line862"> or <a class="apt" href="apt:ros-noetic-desktop-full?refresh=yes">click here</a><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-12"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-13"></span></li></ul><p class="line891"><strong>Desktop Install: </strong> Everything in <strong>ROS-Base</strong> plus tools like <a href="/rqt">rqt</a> and <a href="/rviz">rviz</a> <span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-14"></span><ul><li style="list-style-type:none"><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-15"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-16"></span><pre><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-1-3"></span>sudo apt install ros-noetic-desktop</pre><p class="line862"> or <a class="apt" href="apt:ros-noetic-desktop?refresh=yes">click here</a><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-17"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-18"></span></li></ul><p class="line891"><strong>ROS-Base: (Bare Bones)</strong> ROS packaging, build, and communication libraries. No GUI tools. <span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-19"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-20"></span><ul><li style="list-style-type:none"><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-21"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-22"></span><pre><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-1-4"></span>sudo apt install ros-noetic-ros-base</pre><p class="line862"> or <a class="apt" href="apt:ros-noetic-ros-base?refresh=yes">click here</a><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-23"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-24"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-25"></span></li></ul></li></ul><p class="line874">There are even more packages available in ROS. You can always install a specific package directly. <span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-26"></span><ul><li style="list-style-type:none"><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-27"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-28"></span><pre><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-1-5"></span>sudo apt install ros-noetic-PACKAGE</pre> e.g.<span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-29"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-30"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-31"></span><pre><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-1-6"></span>sudo apt install ros-noetic-slam-gmapping</pre><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-32"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-33"></span></li></ul><p class="line862">To find available packages, see <a class="https" href="https://index.ros.org/packages/page/1/time/#noetic">ROS Index</a> or use: <span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-34"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-35"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-36"></span><pre><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-1-7"></span>apt search ros-noetic</pre><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.line-37"></span><span class="anchor" id="noetic.2FInstallation.2FDebianMetapackages.bottom"></span></div> <span class="anchor" id="line-23"></span><span class="anchor" id="line-24"></span><p class="line867"><div dir="ltr" id="noetic.2FInstallation.2FDebEnvironment.content" lang="en"><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.top"></span>
+<span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-1"></span><p class="line867"><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.additional"></span> <span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-2"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-3"></span><p class="line867">
+<h3 id="noetic.2FInstallation.2FDebEnvironment.Environment_setup">Environment setup</h3>
+<span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-4"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-5"></span><p class="line862">You must source this script in every <strong>bash</strong> terminal you use ROS in. <span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-6"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-7"></span><p class="line867"><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-8"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-9"></span><pre><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-1-1"></span>source /opt/ros/noetic/setup.bash</pre><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-10"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-11"></span><p class="line874">It can be convenient to automatically source this script every time a new shell is launched. These commands will do that for you. <span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-12"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-13"></span><p class="line867"><strong>Bash</strong> <span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-14"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-15"></span><p class="line867"><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-16"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-17"></span><div class="caution"><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-1-2"></span><p class="line862">If you have more than one ROS distribution installed, <tt class="backtick">~/.bashrc</tt> must only source the <tt class="backtick">setup.bash</tt> for the version you are currently using. </div><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-18"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-19"></span><p class="line867"><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-20"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-21"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-22"></span><pre><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-1-3"></span>echo "source /opt/ros/noetic/setup.bash" &gt;&gt; ~/.bashrc
+<span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-2-1"></span>source ~/.bashrc</pre><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-23"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-24"></span><p class="line867"><strong>zsh</strong> <span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-25"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-26"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-27"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-28"></span><pre><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-1-4"></span>echo "source /opt/ros/noetic/setup.zsh" &gt;&gt; ~/.zshrc
+<span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-2-2"></span>source ~/.zshrc</pre><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.line-29"></span><span class="anchor" id="noetic.2FInstallation.2FDebEnvironment.bottom"></span></div> <span class="anchor" id="line-25"></span><span class="anchor" id="line-26"></span><p class="line867">
+<h3 id="Dependencies_for_building_packages">Dependencies for building packages</h3>
+<span class="anchor" id="line-27"></span><p class="line862">Up to now you have installed what you need to run the core ROS packages. To create and manage your own ROS workspaces, there are various tools and requirements that are distributed separately. For example, <a href="/rosinstall">rosinstall</a> is a frequently used command-line tool that enables you to easily download many source trees for ROS packages with one command. <span class="anchor" id="line-28"></span><span class="anchor" id="line-29"></span><p class="line874">To install this tool and other dependencies for building ROS packages, run: <span class="anchor" id="line-30"></span><span class="anchor" id="line-31"></span><p class="line867"><span class="anchor" id="line-32"></span><span class="anchor" id="line-33"></span><pre><span class="anchor" id="line-1-2"></span>sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential</pre><span class="anchor" id="line-34"></span><span class="anchor" id="line-35"></span><span class="anchor" id="line-36"></span><p class="line867">
+<h4 id="Initialize_rosdep">Initialize rosdep</h4>
+<span class="anchor" id="line-37"></span><span class="anchor" id="line-38"></span><p class="line862">Before you can use many ROS tools, you will need to initialize <tt class="backtick">rosdep</tt>. <tt class="backtick">rosdep</tt> enables you to easily install system dependencies for source you want to compile and is required to run some core components in ROS. If you have not yet installed <tt class="backtick">rosdep</tt>, do so as follows. <span class="anchor" id="line-39"></span><span class="anchor" id="line-40"></span><p class="line867"><span class="anchor" id="line-41"></span><span class="anchor" id="line-42"></span><pre><span class="anchor" id="line-1-3"></span>sudo apt install python3-rosdep</pre><span class="anchor" id="line-43"></span><span class="anchor" id="line-44"></span><p class="line862">With the following, you can initialize <tt class="backtick">rosdep</tt>. <span class="anchor" id="line-45"></span><span class="anchor" id="line-46"></span><p class="line867"><span class="anchor" id="line-47"></span><span class="anchor" id="line-48"></span><span class="anchor" id="line-49"></span><pre><span class="anchor" id="line-1-4"></span>sudo rosdep init
+<span class="anchor" id="line-2-1"></span>rosdep update</pre><span class="anchor" id="line-50"></span><span class="anchor" id="line-51"></span><p class="line867"><div dir="ltr" id="noetic.2FInstallation.2FPostInstall.content" lang="en"><span class="anchor" id="noetic.2FInstallation.2FPostInstall.top"></span>
+<span class="anchor" id="noetic.2FInstallation.2FPostInstall.line-1"></span><p class="line867">
+<h2 id="noetic.2FInstallation.2FPostInstall.Tutorials">Tutorials</h2>
+<span class="anchor" id="noetic.2FInstallation.2FPostInstall.line-2"></span><span class="anchor" id="noetic.2FInstallation.2FPostInstall.line-3"></span><p class="line862">Now, to test your installation, please proceed to the <a href="/ROS/Tutorials">ROS Tutorials</a>. <span class="anchor" id="noetic.2FInstallation.2FPostInstall.line-4"></span><span class="anchor" id="noetic.2FInstallation.2FPostInstall.bottom"></span></div> <span class="anchor" id="line-52"></span><span class="anchor" id="line-53"></span><p class="line867">
+<h2 id="ROS_One-line_Installation">ROS One-line Installation</h2>
+<span class="anchor" id="line-54"></span><p class="line862">Check out <a class="http" href="http://wiki.ros.org/ROS/Installation/TwoLineInstall/">this tutorial</a> to install ROS Noetic using a single command. <span class="anchor" id="line-55"></span><span class="anchor" id="bottom"></span></div></div>
+<div id="pagebottom"></div>
+</div>
+
+<p id="pageinfo" class="info" lang="en" dir="ltr">Wiki: noetic/Installation/Ubuntu  (last edited 2023-03-04 17:53:42 by <span title="130s @ 2600:1700:6fd0:3430:a9fb:23ee:6a2c:b37b[2600:1700:6fd0:3430:a9fb:23ee:6a2c:b37b]"><a href="/IsaacSaito" title="130s @ 2600:1700:6fd0:3430:a9fb:23ee:6a2c:b37b[2600:1700:6fd0:3430:a9fb:23ee:6a2c:b37b]">IsaacSaito</a></span>)</p>
+
+
+
+
+<div style="margin-top: 9px;" class="footer">
+Except where otherwise noted, the ROS wiki is licensed under the <br /><a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>
+<hr style="margin-top: 10px;">
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+<a href="https://www.openrobotics.org/"><img style="margin-top: -1px;" src="/custom/images/brought_by_horiz.png"></p></a>
+  </div>
+</div>
+</div>
+
+  </div></div> <!-- /#dpage-inner, /#dpage -->
+
+
+</body>
+</html>
+
+µ›<Èˆ:      f™†ºf™ˆSGà f™†»   S    O^partitionKey=%28http%2Cros.org%29,:http://wiki.ros.org/noetic/Installation/Ubuntu necko:classified 1 strongly-framed 1 request-method GET request-User-Agent Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/111.0 request-Accept-Language en-US,en;q=0.5 response-head HTTP/1.1 200 OK
+Date: Thu, 18 Jul 2024 21:18:51 GMT
+Server: gunicorn/19.10.0
+Content-Type: text/html; charset=utf-8
+Vary: Cookie,User-Agent,Accept-Language
+Content-Length: 33770
+Via: 1.1 wiki.ros.org
+ original-response-headers Date: Thu, 18 Jul 2024 21:18:51 GMT
+Server: gunicorn/19.10.0
+Content-Type: text/html; charset=utf-8
+Vary: Cookie,User-Agent,Accept-Language
+Content-Length: 33770
+Via: 1.1 wiki.ros.org
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+ ctid 1 uncompressed-len 0 net-response-time-onstart 869 net-response-time-onstop 1334   ƒê

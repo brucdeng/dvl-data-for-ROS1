@@ -1,0 +1,104 @@
+[rosmaster.main][INFO] 2024-07-20 00:59:50,945: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2024-07-20 00:59:50,945: Starting ROS Master Node
+[xmlrpc][INFO] 2024-07-20 00:59:50,947: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2024-07-20 00:59:50,948: Started XML-RPC server [http://ubuntu:11311/]
+[rosmaster.master][INFO] 2024-07-20 00:59:50,948: Master initialized: port[11311], uri[http://ubuntu:11311/]
+[xmlrpc][INFO] 2024-07-20 00:59:50,949: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2024-07-20 00:59:51,004: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2024-07-20 00:59:51,006: +PARAM [/roslaunch/uris/host_ubuntu__35479] by /roslaunch
+[rosmaster.master][INFO] 2024-07-20 00:59:51,129: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2024-07-20 00:59:51,130: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2024-07-20 00:59:51,362: +SERVICE [/rosout/get_loggers] /rosout http://ubuntu:34179/
+[rosmaster.master][INFO] 2024-07-20 00:59:51,371: +SERVICE [/rosout/set_logger_level] /rosout http://ubuntu:34179/
+[rosmaster.master][INFO] 2024-07-20 00:59:51,375: +PUB [/rosout_agg] /rosout http://ubuntu:34179/
+[rosmaster.master][INFO] 2024-07-20 00:59:51,385: +SUB [/rosout] /rosout http://ubuntu:34179/
+[rosmaster.master][INFO] 2024-07-20 01:00:07,763: +PUB [/rosout] /messagepublisher_39059_1721462407570 http://ubuntu:36321/
+[rosmaster.master][INFO] 2024-07-20 01:00:07,769: +SERVICE [/messagepublisher_39059_1721462407570/get_loggers] /messagepublisher_39059_1721462407570 http://ubuntu:36321/
+[rosmaster.master][INFO] 2024-07-20 01:00:07,772: +SERVICE [/messagepublisher_39059_1721462407570/set_logger_level] /messagepublisher_39059_1721462407570 http://ubuntu:36321/
+[rosmaster.master][INFO] 2024-07-20 01:00:07,773: +PUB [/information] /messagepublisher_39059_1721462407570 http://ubuntu:36321/
+[rosmaster.master][INFO] 2024-07-20 01:00:07,776: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:07,800: publisherUpdate[/rosout] -> http://ubuntu:34179/ ['http://ubuntu:36321/']
+[rosmaster.master][INFO] 2024-07-20 01:00:07,819: publisherUpdate[/rosout] -> http://ubuntu:34179/ ['http://ubuntu:36321/']: sec=0.02, result=[1, '', 0]
+[rosmaster.master][INFO] 2024-07-20 01:00:08,035: +CACHEDPARAM [/rosout/omit_topics] by /rosout
+[rosmaster.master][INFO] 2024-07-20 01:00:08,777: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:09,789: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:10,778: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:11,777: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:12,777: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:13,777: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:14,789: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:15,782: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:16,782: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:17,784: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:18,791: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:19,779: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:20,790: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:21,780: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:22,787: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:23,784: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:24,780: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:25,783: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:26,795: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:27,780: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:28,791: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:29,787: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:30,784: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:31,781: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:32,779: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:33,791: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:34,781: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:35,777: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:36,784: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:37,778: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:38,777: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:39,778: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:40,777: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:41,778: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:42,780: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:43,780: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:44,778: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:45,785: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:46,783: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:47,778: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:48,781: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:49,783: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:50,777: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:51,779: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:52,777: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:53,777: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:54,276: +PUB [/rosout] /messagesubscriber http://ubuntu:38225/
+[rosmaster.master][INFO] 2024-07-20 01:00:54,292: +SERVICE [/messagesubscriber/get_loggers] /messagesubscriber http://ubuntu:38225/
+[rosmaster.master][INFO] 2024-07-20 01:00:54,298: +SERVICE [/messagesubscriber/set_logger_level] /messagesubscriber http://ubuntu:38225/
+[rosmaster.master][INFO] 2024-07-20 01:00:54,313: +SUB [/information] /messagesubscriber http://ubuntu:38225/
+[rosmaster.master][INFO] 2024-07-20 01:00:54,366: publisherUpdate[/rosout] -> http://ubuntu:34179/ ['http://ubuntu:36321/', 'http://ubuntu:38225/']
+[rosmaster.master][INFO] 2024-07-20 01:00:54,369: publisherUpdate[/rosout] -> http://ubuntu:34179/ ['http://ubuntu:36321/', 'http://ubuntu:38225/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2024-07-20 01:00:54,788: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:55,784: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:56,778: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:57,784: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:58,779: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:00:59,777: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:01:00,781: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:01:00,889: -SUB [/information] /messagesubscriber http://ubuntu:38225/
+[rosmaster.master][INFO] 2024-07-20 01:01:00,890: -PUB [/rosout] /messagesubscriber http://ubuntu:38225/
+[rosmaster.master][INFO] 2024-07-20 01:01:00,890: -SERVICE [/messagesubscriber/get_loggers] /messagesubscriber rosrpc://ubuntu:40347
+[rosmaster.master][INFO] 2024-07-20 01:01:00,890: -SERVICE [/messagesubscriber/set_logger_level] /messagesubscriber rosrpc://ubuntu:40347
+[rosmaster.master][INFO] 2024-07-20 01:01:00,905: publisherUpdate[/rosout] -> http://ubuntu:34179/ ['http://ubuntu:36321/']
+[rosmaster.master][INFO] 2024-07-20 01:01:00,908: publisherUpdate[/rosout] -> http://ubuntu:34179/ ['http://ubuntu:36321/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2024-07-20 01:01:01,778: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:01:02,784: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:01:03,778: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_39059_1721462407570
+[rosmaster.master][INFO] 2024-07-20 01:01:04,209: -PUB [/rosout] /messagepublisher_39059_1721462407570 http://ubuntu:36321/
+[rosmaster.master][INFO] 2024-07-20 01:01:04,209: -PUB [/information] /messagepublisher_39059_1721462407570 http://ubuntu:36321/
+[rosmaster.master][INFO] 2024-07-20 01:01:04,210: -SERVICE [/messagepublisher_39059_1721462407570/get_loggers] /messagepublisher_39059_1721462407570 rosrpc://ubuntu:40675
+[rosmaster.master][INFO] 2024-07-20 01:01:04,210: -SERVICE [/messagepublisher_39059_1721462407570/set_logger_level] /messagepublisher_39059_1721462407570 rosrpc://ubuntu:40675
+[rosmaster.master][INFO] 2024-07-20 01:01:04,256: publisherUpdate[/rosout] -> http://ubuntu:34179/ []
+[rosmaster.master][INFO] 2024-07-20 01:01:04,258: publisherUpdate[/rosout] -> http://ubuntu:34179/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2024-07-20 01:01:07,968: -PUB [/rosout_agg] /rosout http://ubuntu:34179/
+[rosmaster.master][INFO] 2024-07-20 01:01:07,969: -SUB [/rosout] /rosout http://ubuntu:34179/
+[rosmaster.master][INFO] 2024-07-20 01:01:07,970: -SERVICE [/rosout/get_loggers] /rosout rosrpc://ubuntu:55511
+[rosmaster.master][INFO] 2024-07-20 01:01:07,971: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://ubuntu:55511
+[rosmaster.master][INFO] 2024-07-20 01:01:07,972: -CACHEDPARAM [/rosout/omit_topics] by /rosout
+[rosmaster.main][INFO] 2024-07-20 01:01:08,000: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2024-07-20 01:01:08,000: stopping master...
+[rospy.core][INFO] 2024-07-20 01:01:08,000: signal_shutdown [atexit]

@@ -1,0 +1,6 @@
+
+
+1721469354.029749976  Node Startup
+1721469500.279149055 INFO /messagepublisher_132086_1721469500102 [publisher_node.py:24(<module>)] [topics: /information, /rosout] {"ts": 1671710249.254025, "x": 0.23826026885623866, "y": -0.15289192583240302, "z": -0.10100456961946697, "std": 3.179544810263471, "roll": 2.5447792387786192, "pitch": 0.004469535693398209, "yaw": 2.8201013674066004, "type": "position_local", "status": 0, "format": "json_v3.1", "log_time": 1721041292811360}
+1721469501.279844045 INFO /messagepublisher_132086_1721469500102 [publisher_node.py:24(<module>)] [topics: /information, /rosout] {"ts": 1671710249.254025, "x": 0.23826026885623866, "y": -0.15289192583240302, "z": -0.10100456961946697, "std": 3.179544810263471, "roll": 2.5447792387786192, "pitch": 0.004469535693398209, "yaw": 2.8201013674066004, "type": "position_local", "status": 0, "format": "json_v3.1", "log_time": 1721041292811360}
+1721469502.280234813 INFO /messagepublisher_132086_1721469500102 [publisher_node.py:24(<module>)] [topics: /information, /rosout] {"ts": 1671710249.254025, "x": 0.23826026885623866, "y": -0.15289192583240302, "z": -0.10100456961946697, "std": 3.179544810263471, "roll": 2.5447792387786192, "pitch": 0.004469535693398209, "yaw": 2.8201013674066004, "type": "position_local", "status": 0, "format": "json_v3.1", "log_time": 1721041292811360}

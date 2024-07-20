@@ -1,0 +1,30 @@
+[rosmaster.main][INFO] 2024-07-20 02:55:53,788: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2024-07-20 02:55:53,789: Starting ROS Master Node
+[xmlrpc][INFO] 2024-07-20 02:55:53,792: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2024-07-20 02:55:53,793: Started XML-RPC server [http://ubuntu:11311/]
+[rosmaster.master][INFO] 2024-07-20 02:55:53,793: Master initialized: port[11311], uri[http://ubuntu:11311/]
+[xmlrpc][INFO] 2024-07-20 02:55:53,794: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2024-07-20 02:55:53,821: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2024-07-20 02:55:53,822: +PARAM [/roslaunch/uris/host_ubuntu__40933] by /roslaunch
+[rosmaster.master][INFO] 2024-07-20 02:55:53,920: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2024-07-20 02:55:53,920: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2024-07-20 02:55:54,026: +SERVICE [/rosout/get_loggers] /rosout http://ubuntu:40619/
+[rosmaster.master][INFO] 2024-07-20 02:55:54,027: +SERVICE [/rosout/set_logger_level] /rosout http://ubuntu:40619/
+[rosmaster.master][INFO] 2024-07-20 02:55:54,030: +PUB [/rosout_agg] /rosout http://ubuntu:40619/
+[rosmaster.master][INFO] 2024-07-20 02:55:54,037: +SUB [/rosout] /rosout http://ubuntu:40619/
+[rosmaster.master][INFO] 2024-07-20 02:58:20,265: +PUB [/rosout] /messagepublisher_132086_1721469500102 http://ubuntu:44461/
+[rosmaster.master][INFO] 2024-07-20 02:58:20,271: +SERVICE [/messagepublisher_132086_1721469500102/get_loggers] /messagepublisher_132086_1721469500102 http://ubuntu:44461/
+[rosmaster.master][INFO] 2024-07-20 02:58:20,273: +SERVICE [/messagepublisher_132086_1721469500102/set_logger_level] /messagepublisher_132086_1721469500102 http://ubuntu:44461/
+[rosmaster.master][INFO] 2024-07-20 02:58:20,275: +PUB [/information] /messagepublisher_132086_1721469500102 http://ubuntu:44461/
+[rosmaster.master][INFO] 2024-07-20 02:58:20,278: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_132086_1721469500102
+[rosmaster.master][INFO] 2024-07-20 02:58:20,338: publisherUpdate[/rosout] -> http://ubuntu:40619/ ['http://ubuntu:44461/']
+[rosmaster.master][INFO] 2024-07-20 02:58:20,357: publisherUpdate[/rosout] -> http://ubuntu:40619/ ['http://ubuntu:44461/']: sec=0.02, result=[1, '', 0]
+[rosmaster.master][INFO] 2024-07-20 02:58:20,561: +CACHEDPARAM [/rosout/omit_topics] by /rosout
+[rosmaster.master][INFO] 2024-07-20 02:58:21,278: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_132086_1721469500102
+[rosmaster.master][INFO] 2024-07-20 02:58:22,279: +CACHEDPARAM [/rosout_disable_topics_generation] by /messagepublisher_132086_1721469500102
+[rosmaster.master][INFO] 2024-07-20 02:58:22,737: -PUB [/rosout] /messagepublisher_132086_1721469500102 http://ubuntu:44461/
+[rosmaster.master][INFO] 2024-07-20 02:58:22,737: -PUB [/information] /messagepublisher_132086_1721469500102 http://ubuntu:44461/
+[rosmaster.master][INFO] 2024-07-20 02:58:22,737: -SERVICE [/messagepublisher_132086_1721469500102/get_loggers] /messagepublisher_132086_1721469500102 rosrpc://ubuntu:35753
+[rosmaster.master][INFO] 2024-07-20 02:58:22,737: -SERVICE [/messagepublisher_132086_1721469500102/set_logger_level] /messagepublisher_132086_1721469500102 rosrpc://ubuntu:35753
+[rosmaster.master][INFO] 2024-07-20 02:58:22,751: publisherUpdate[/rosout] -> http://ubuntu:40619/ []
+[rosmaster.master][INFO] 2024-07-20 02:58:22,753: publisherUpdate[/rosout] -> http://ubuntu:40619/ []: sec=0.00, result=[1, '', 0]

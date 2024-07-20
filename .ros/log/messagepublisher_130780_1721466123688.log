@@ -1,0 +1,94 @@
+[rospy.client][INFO] 2024-07-20 02:02:03,737: init_node, name[/messagepublisher_130780_1721466123688], pid[130780]
+[xmlrpc][INFO] 2024-07-20 02:02:03,738: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2024-07-20 02:02:03,739: Started XML-RPC server [http://ubuntu:37695/]
+[rospy.impl.masterslave][INFO] 2024-07-20 02:02:03,739: _ready: http://ubuntu:37695/
+[rospy.init][INFO] 2024-07-20 02:02:03,740: ROS Slave URI: [http://ubuntu:37695/]
+[rospy.registration][INFO] 2024-07-20 02:02:03,741: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2024-07-20 02:02:03,742: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2024-07-20 02:02:03,841: registered with master
+[rospy.rosout][INFO] 2024-07-20 02:02:03,841: initializing /rosout core topic
+[rospy.rosout][INFO] 2024-07-20 02:02:03,850: connected to core topic /rosout
+[rospy.simtime][INFO] 2024-07-20 02:02:03,852: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2024-07-20 02:02:03,857: {}
+[rospy.internal][INFO] 2024-07-20 02:02:04,144: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2024-07-20 02:02:04,859: {}
+[rosout][INFO] 2024-07-20 02:02:05,859: {}
+[rosout][INFO] 2024-07-20 02:02:06,859: {}
+[rosout][INFO] 2024-07-20 02:02:07,859: {}
+[rosout][INFO] 2024-07-20 02:02:08,858: {}
+[rosout][INFO] 2024-07-20 02:02:09,859: {}
+[rosout][INFO] 2024-07-20 02:02:10,859: {}
+[rosout][INFO] 2024-07-20 02:02:11,860: {}
+[rosout][INFO] 2024-07-20 02:02:12,858: {}
+[rosout][INFO] 2024-07-20 02:02:13,858: {}
+[rosout][INFO] 2024-07-20 02:02:14,858: {}
+[rosout][INFO] 2024-07-20 02:02:15,859: {}
+[rosout][INFO] 2024-07-20 02:02:16,859: {}
+[rosout][INFO] 2024-07-20 02:02:17,859: {}
+[rosout][INFO] 2024-07-20 02:02:18,860: {}
+[rosout][INFO] 2024-07-20 02:02:19,860: {}
+[rosout][INFO] 2024-07-20 02:02:20,860: {}
+[rosout][INFO] 2024-07-20 02:02:21,859: {}
+[rosout][INFO] 2024-07-20 02:02:22,858: {}
+[rosout][INFO] 2024-07-20 02:02:23,859: {}
+[rosout][INFO] 2024-07-20 02:02:24,858: {}
+[rosout][INFO] 2024-07-20 02:02:25,859: {}
+[rosout][INFO] 2024-07-20 02:02:26,859: {}
+[rosout][INFO] 2024-07-20 02:02:27,860: {}
+[rosout][INFO] 2024-07-20 02:02:28,860: {}
+[rosout][INFO] 2024-07-20 02:02:29,860: {}
+[rosout][INFO] 2024-07-20 02:02:30,860: {}
+[rosout][INFO] 2024-07-20 02:02:31,859: {}
+[rosout][INFO] 2024-07-20 02:02:32,858: {}
+[rosout][INFO] 2024-07-20 02:02:33,858: {}
+[rosout][INFO] 2024-07-20 02:02:34,858: {}
+[rosout][INFO] 2024-07-20 02:02:35,858: {}
+[rosout][INFO] 2024-07-20 02:02:36,858: {}
+[rosout][INFO] 2024-07-20 02:02:37,859: {}
+[rosout][INFO] 2024-07-20 02:02:38,858: {}
+[rosout][INFO] 2024-07-20 02:02:39,860: {}
+[rosout][INFO] 2024-07-20 02:02:40,858: {}
+[rosout][INFO] 2024-07-20 02:02:41,859: {}
+[rosout][INFO] 2024-07-20 02:02:42,859: {}
+[rosout][INFO] 2024-07-20 02:02:43,859: {}
+[rosout][INFO] 2024-07-20 02:02:44,858: {}
+[rosout][INFO] 2024-07-20 02:02:45,863: {}
+[rosout][INFO] 2024-07-20 02:02:46,858: {}
+[rosout][INFO] 2024-07-20 02:02:47,858: {}
+[rosout][INFO] 2024-07-20 02:02:48,859: {}
+[rosout][INFO] 2024-07-20 02:02:49,859: {}
+[rosout][INFO] 2024-07-20 02:02:50,858: {}
+[rosout][INFO] 2024-07-20 02:02:51,858: {}
+[rosout][INFO] 2024-07-20 02:02:52,858: {}
+[rosout][INFO] 2024-07-20 02:02:53,859: {}
+[rosout][INFO] 2024-07-20 02:02:54,858: {}
+[rosout][INFO] 2024-07-20 02:02:55,858: {}
+[rosout][INFO] 2024-07-20 02:02:56,858: {}
+[rosout][INFO] 2024-07-20 02:02:57,859: {}
+[rosout][INFO] 2024-07-20 02:02:58,860: {}
+[rosout][INFO] 2024-07-20 02:02:59,859: {}
+[rosout][INFO] 2024-07-20 02:03:00,859: {}
+[rosout][INFO] 2024-07-20 02:03:01,860: {}
+[rosout][INFO] 2024-07-20 02:03:02,859: {}
+[rosout][INFO] 2024-07-20 02:03:03,859: {}
+[rosout][INFO] 2024-07-20 02:03:04,860: {}
+[rosout][INFO] 2024-07-20 02:03:05,859: {}
+[rosout][INFO] 2024-07-20 02:03:06,859: {}
+[rosout][INFO] 2024-07-20 02:03:07,860: {}
+[rosout][INFO] 2024-07-20 02:03:08,858: {}
+[rosout][INFO] 2024-07-20 02:03:09,858: {}
+[rosout][INFO] 2024-07-20 02:03:10,858: {}
+[rosout][INFO] 2024-07-20 02:03:11,859: {}
+[rosout][INFO] 2024-07-20 02:03:12,859: {}
+[rosout][INFO] 2024-07-20 02:03:13,858: {}
+[rosout][INFO] 2024-07-20 02:03:14,859: {}
+[rosout][INFO] 2024-07-20 02:03:15,858: {}
+[rosout][INFO] 2024-07-20 02:03:16,860: {}
+[rosout][INFO] 2024-07-20 02:03:17,859: {}
+[rosout][INFO] 2024-07-20 02:03:18,858: {}
+[rosout][INFO] 2024-07-20 02:03:19,859: {}
+[rosout][INFO] 2024-07-20 02:03:20,858: {}
+[rospy.core][INFO] 2024-07-20 02:03:21,639: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2024-07-20 02:03:21,645: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2024-07-20 02:03:21,645: signal-2
+[rospy.core][INFO] 2024-07-20 02:03:22,243: signal_shutdown [atexit]
