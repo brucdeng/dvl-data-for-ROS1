@@ -1,0 +1,8 @@
+prefix=/home/bd/dvlros_ws/devel
+
+Name: test_ros
+Description: Description of test_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
