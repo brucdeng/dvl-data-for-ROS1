@@ -1,2 +1,0 @@
-test_ros
--DCATKIN_DEVEL_PREFIX=/home/bd/dvl_ros_github/dvlros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/bd/dvl_ros_github/dvlros_ws/install -G Unix Makefiles
