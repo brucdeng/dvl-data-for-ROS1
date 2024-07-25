@@ -97,6 +97,10 @@ def _handle(message_type, message, time_format, csv_writer):
     if time_format:
         _format_timestamps(message_type, report, time_format)
     print(json.dumps(report))
+    # Specify file path
+    file_path='out.json'
+    with open(file_path, 'w') as json_file:
+        json.dump(report, json_file, indent=4)
     if csv_writer is not None:
         csv_writer.writerow(report)
         csv_writer.flush()
