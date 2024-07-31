@@ -1,7 +1,6 @@
 # Parse A50 DVL dead reckoning data as JSON entry -> ROS1 publisher and subscriber nodes
-Run dvl_data.py to start writing JSON entries of the dead reckoning data to an output JSON file
 
-**make the package with catkin and source**
+**First, make the package with catkin and source. Then,**
 1. Make a file named out.json in the dvlros_ws directory after cloning repo 
 2. Run dvl_tcp_parser.py (this is the same file from waterlinked dvl-python github, run it the same exact way as you would, include all necessary parameters to get the dead reckoning report)
 ```
