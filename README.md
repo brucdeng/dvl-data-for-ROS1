@@ -3,7 +3,7 @@ Run dvl_data.py to start writing JSON entries of the dead reckoning data to an o
 
 make the package with catkin and source
 
-```
+```d
 roscore
 ```
 
