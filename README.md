@@ -14,6 +14,7 @@ python3 dvl_tcp_parser.py dead_reckoning -i 192.168.194.95
 - dvl_data.py reads from data.json, and constantly updates out.json with the entries from data.json, one by one, in a loop
 - publisher_node.py executes dvl_data.py, reads from out.json, and publishes what is read
 - subscriber_node.py subscribes to the topic the publisher is publishing to
+- dvl_control.py is intended to read the JSON entries being published to the ROS topic, and execute movement based on what is being read. Currently, it is able to listen to the ROS topic, and gather data such as x, y, z position coordinates and other info dead reckoning offers. 
 
 Currently the publisher node (see below) doesn't publish the live dead reckonoing feed (it just reads from a JSON file of four JSON entries and constantly publishes those 4 in a loop) so the plan is to see if the 3 steps above work, and if it does we can publish the live dead reckoning feed by replacing dvl_data.py with dvl_tcp_parser.py
 
