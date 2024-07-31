@@ -10,7 +10,7 @@ python3 dvl_tcp_parser.py dead_reckoning -i 192.168.194.95
 3. Check out.json to see if the dead reckonoing report is being fed to the JSON file (this part may or may not work), make sure to refresh the file
 
 **Explanation on how the files work/are related to each other:**
-- data.json stores the 4 JSON entries mentioned earlier
+- data.json stores the 4 JSON dead reckoning entries
 - dvl_data.py reads from data.json, and constantly updates out.json with the entries from data.json, one by one, in a loop
 - publisher_node.py executes dvl_data.py, reads from out.json, and publishes what is read
 - subscriber_node.py subscribes to the topic the publisher is publishing to
