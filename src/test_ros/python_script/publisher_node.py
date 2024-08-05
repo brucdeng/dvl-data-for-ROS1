@@ -5,7 +5,7 @@ import json
 from std_msgs.msg import String
 import subprocess
 
-subprocess.Popen(['python', os.path.expanduser("~")+'/dvlros_ws/src/test_ros/python_script/dvl_data.py'])
+subprocess.Popen(['python', os.path.expanduser("~")+'/dvlros_ws/dvl_tcp_parser.py'])
 nodeName='messagepublisher'
 topicName='information'
 #initializing node
@@ -18,7 +18,7 @@ ratePublisher=rospy.Rate(1)
 
 while not rospy.is_shutdown():
 	try:
-		with open(os.path.expanduser("~")+'/dvlros_ws/src/test_ros/python_script/output/out.json','r') as f:
+		with open(os.path.expanduser("~")+'/dvlros_ws/out.json','r') as f:
 			data = json.load(f)
 			data_str=json.dumps(data)
 	except (json.JSONDecodeError):
